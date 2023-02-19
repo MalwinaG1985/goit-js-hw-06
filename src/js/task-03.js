@@ -13,8 +13,8 @@ const images = [
   },
 ];
 const imagesGallery = document.querySelector('.gallery');
-const imagesList = images.map(image =>`<li><img src ='${image.url}' alt = '${image.alt}' width = "320"></li>`)
-// .join('')
+const imagesList = images.map((image) =>`<li><img src ='${image.url}' alt = '${image.alt}' width = "320"></li>`)
+
 
 imagesGallery.insertAdjacentHTML('beforeend', imagesList)
 console.log(imagesGallery);
@@ -23,6 +23,6 @@ const pictur = document.querySelectorAll('.picture')
 imagesGallery.style.display = 'flex';
 imagesGallery.style.listStyle = 'none'
 imagesGallery.style.justifyContent = 'center'
-imagesGallery.style.margin = '0px'
+imagesGallery.style.backgroundColor = 'green'
 imagesGallery.style.gap = '20px'
 
